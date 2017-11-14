@@ -1,0 +1,23 @@
+{
+  "name": "cs50-footstats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-rodrigues20/cs50-footstats.git"
+  },
+  "author": "Lucas Rodrigues Moura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucas-rodrigues20/cs50-footstats/issues"
+  },
+  "homepage": "https://github.com/lucas-rodrigues20/cs50-footstats#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
