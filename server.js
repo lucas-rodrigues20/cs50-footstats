@@ -4,6 +4,7 @@ require('dotenv').config();
 
 const express = require('express');
 const request = require('request');
+const morgan = require('morgan');
 
 const app = express();
 
@@ -14,6 +15,7 @@ const footballAPI = {
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use(morgan('combined'))
 
 app.get('/', (req, res) => {
 
@@ -55,6 +57,16 @@ app.get('/leagues', (req, res, next) => {
 
     });
     
+});
+
+// ERROR HANDLERS
+app.use((req, res, next) => {
+    res.status(404).render('errors/404');
+});
+
+app.use((err, req, res, next) => {
+    console.log(err);
+    res.status(err.status || 500).render('errors/500');
 });
 
 const listener = app.listen(process.env.PORT || 3000, () => {
