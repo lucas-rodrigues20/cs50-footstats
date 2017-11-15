@@ -29,7 +29,7 @@ app.get('/leagues', (req, res, next) => {
         headers: {
             'X-Auth-Token': footballAPI.apiKey
         }
-    }
+    };
 
     request(options, (err, response, body) => {
 
@@ -54,6 +54,43 @@ app.get('/leagues', (req, res, next) => {
             });
 
         return res.json(leagues);
+
+    });
+    
+});
+
+app.get('/league/:id/table', (req, res, next) => {
+
+    if (!parseInt(req.params.id))
+        return next();
+
+    const options = {
+        url: `${footballAPI.baseUrl}/competitions/${req.params.id}/leagueTable`,
+        headers: {
+            'X-Auth-Token': footballAPI.apiKey
+        },
+        qs: {
+            matchday: req.query.matchday
+        }
+    };
+
+    request(options, (err, response, body) => {
+
+        if (err)
+            return next(err);
+
+        body = JSON.parse(body);
+
+        if (body.error)
+            return next();
+
+        const leagueTable = {
+            leagueCaption: body.leagueCaption,
+            matchday: body.matchday,
+            standing: body.standing,
+        };
+
+        return res.json(leagueTable);
 
     });
     
