@@ -1,7 +1,24 @@
 <% include ./partials/top %>
 
-<div class="container-fluid">
-    <h1>CS50 FootStats</h1>
+<div class="main container-fluid">
+    
+    <div class="main-content">
+        <h1 class="text-center">
+            CS50 FootStats
+        </h1>
+        <hr>
+
+        <div class="col-md-4 col-md-offset-4">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <select class="leagues form-control">
+                        <option selected="true" disabled="disabled">Choose a League...</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </div>
 
 <% include ./partials/bottom %>

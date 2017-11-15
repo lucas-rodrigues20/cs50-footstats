@@ -1,0 +1,106 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* LANDING PAGE */
+.main hr {
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-top: 3px solid #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    width: 20%;
+}
+
+.main {
+    background-image: url(/resources/images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    color: #fff;
+    margin-top: -23px;
+}
+
+.main-content {
+    padding-top: 15%;
+}
+
+.main-content h1 {
+    color: #fff;
+    font-family: 'Rozha One', serif;
+    font-size: 4.5em;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* NAVBAR */
+.navbar {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    margin-bottom: 23px;
+}
+
+.navbar-default {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    font-family: 'Rozha One', serif;
+    font-size: 2.5em;
+    color: #0a8825 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.navbar .container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* NAVBAR SELECT */
+.navbar select.leagues {
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaP/QSjAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
+    -webkit-background-size: 13px 13px;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 6px 16px 6px 0;
+    -webkit-box-shadow: inset 0 -1px 0 #ddd;
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.navbar select.leagues:focus {
+  -webkit-box-shadow: inset 0 -2px 0 #0a8825;
+  box-shadow: inset 0 -2px 0 #0a8825;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEUhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISF8S9ewAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #0a8825;
+    padding: 30px 0 20px 0;
+    box-shadow: 0 -2px 2px rgba(0,0,0,0.4);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .text-muted {
+    color: #eee;
+    font-size: 0.95em;
+}
+
+.footer-social a {
+    color: #fff;
+}
+
+.footer-social a:hover {
+    color: yellow;
+}
