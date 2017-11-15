@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/lucas-rodrigues20/cs50-footstats#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "request": "^2.83.0"
   }
 }
