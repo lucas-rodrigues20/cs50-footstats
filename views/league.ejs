@@ -12,6 +12,22 @@
         <% include ./partials/league-table-handlebars %>
     </div>
 
+    <div class="col-md-6 text-center">
+        
+        <div class="ctrl-btns hidden">
+            <button type="button" class="btn btn-xs btn-primary" data-action="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </button>
+            #<span id="current-round">1</span> Round
+            <button type="button" class="btn btn-xs btn-primary" data-action="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </button>
+        </div>
+        
+        <svg class="chart" width="720" height="480" viewBox="0 0 720 480" perserveAspectRatio="xMinYMid"></svg>
+
+    </div>
+
 </div>
 
 <%- include('./partials/bottom', { loadChartScripts: true }) %>
