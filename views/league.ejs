@@ -8,6 +8,10 @@
     <input id="competitionId" type="hidden" value="<%= league.id %>">
     <hr>
 
+    <div class="league-table col-md-6">
+        <% include ./partials/league-table-handlebars %>
+    </div>
+
 </div>
 
-<%- include ./partials/bottom %>
+<%- include('./partials/bottom', { loadChartScripts: true }) %>

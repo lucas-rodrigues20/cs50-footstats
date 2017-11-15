@@ -4,5 +4,12 @@
     <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
     <script src="/resources/js/leagues-menu.js"></script>
 
+    <% if(locals.loadChartScripts) { -%>
+        <script src="/vendors/d3/d3.min.js" charset="utf-8"></script>
+        <script src="/vendors/handlebars/handlebars.js"></script>
+        <script src="/resources/js/league-table.js"></script>
+        <script src="/resources/js/league.js"></script>
+    <% } -%>
+
 </body>
 </html>

@@ -1,0 +1,52 @@
+<script id="league-table-template" type="text/x-handlebars-template">
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <colgroup>
+                    <col class="col-xs-1">
+                    <col class="col-xs-3">
+                    <col class="col-xs-1">
+                    <col class="col-xs-1">
+                    <col class="col-xs-1">
+                    <col class="col-xs-1">
+                    <col class="col-xs-1">
+                    <col class="col-xs-1">
+                    <col class="col-xs-1">
+                    <col class="col-xs-1">
+                </colgroup>
+
+            <thead>
+                <tr>
+                    <th class="text-center">Pos</th>
+                    <th class="text-center">Team</th>
+                    <th class="text-center">Played</th>
+                    <th class="text-center">W</th>
+                    <th class="text-center">D</th>
+                    <th class="text-center">L</th>
+                    <th class="text-center">GF</th>
+                    <th class="text-center">GA</th>
+                    <th class="text-center">GD</th>
+                    <th class="text-center">Points</th>
+                </tr>
+            </thead>
+
+            <tbody>
+              {{#each standing}}
+                <tr>
+                    <td class="text-center">{{position}}</td>
+                    <td class="text-center">{{teamName}}</td>
+                    <td class="text-center">{{playedGames}}</td>
+                    <td class="text-center">{{wins}}</td>
+                    <td class="text-center">{{draws}}</td>
+                    <td class="text-center">{{losses}}</td>
+                    <td class="text-center">{{goals}}</td>
+                    <td class="text-center">{{goalsAgainst}}</td>
+                    <td class="text-center">{{goalDifference}}</td>
+                    <td class="text-center">
+                        <strong>{{points}}</strong>
+                    </td>
+                </tr>
+              {{/each}}
+            </tbody>
+        </table>
+    </div>
+</script>
