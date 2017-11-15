@@ -1,0 +1,13 @@
+<% include ./partials/top %>
+
+<div class="container-fluid">
+    
+    <h1 class="text-center">
+        <%= league.caption %> - <%= league.year %>
+    </h1>
+    <input id="competitionId" type="hidden" value="<%= league.id %>">
+    <hr>
+
+</div>
+
+<%- include ./partials/bottom %>

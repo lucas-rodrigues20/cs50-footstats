@@ -96,6 +96,34 @@ app.get('/league/:id/table', (req, res, next) => {
     
 });
 
+app.get('/league/:id', (req, res, next) => {
+
+    if (!parseInt(req.params.id))
+        return next();
+
+    const options = {
+        url: `${footballAPI.baseUrl}/competitions/${req.params.id}`,
+        headers: {
+            'X-Auth-Token': footballAPI.apiKey
+        }
+    };
+
+    request(options, (err, response, body) => {
+
+        if (err)
+            return next(err);
+
+        let league = JSON.parse(body);
+
+        if (league.error)
+            return next();
+
+        return res.render('league', { league });
+
+    });
+    
+});
+
 // ERROR HANDLERS
 app.use((req, res, next) => {
     res.status(404).render('errors/404');

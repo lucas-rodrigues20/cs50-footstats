@@ -8,10 +8,14 @@ var leaguesMenu = (function () {
 
     function selectCurrentLeague(event) {
 
-        /**
-        *   TODO
-        */
+        if ($competitionId.length > 0 && _isValidOption($competitionId.val()) > 0) {
+                $leagues.val($competitionId.val());
+        }
 
+        function _isValidOption(id) {
+            var option = $leagues.find(`option[value=${id}]`);
+            return option.length > 0;
+        }
     }
 
 
