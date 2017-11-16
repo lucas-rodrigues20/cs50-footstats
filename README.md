@@ -1,6 +1,6 @@
 # CS50 FootStats
 
-This is application is my final project for the [Harvard CS50 Course on edX](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x), and it consists of an application for fast data visualization about the world's major football leagues.
+This application is my final project for the [Harvard CS50 Course on edX](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x), and it consists of an application for fast data visualization about the world's major football leagues.
 
 You can see a live version running [here](https://cs50-footstats.glitch.me/).
 
